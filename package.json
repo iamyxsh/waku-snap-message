@@ -57,5 +57,8 @@
       "@lavamoat/preinstall-always-fail": false,
       "sharp": true
     }
+  },
+  "dependencies": {
+    "@waku/sdk": "^0.0.21"
   }
 }

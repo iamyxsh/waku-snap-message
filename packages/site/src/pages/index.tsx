@@ -15,6 +15,7 @@ import {
   getSnap,
   isLocalSnap,
   sendHello,
+  sendMessage,
   shouldDisplayReconnectButton,
 } from '../utils';
 
@@ -126,7 +127,7 @@ const Index = () => {
 
   const handleSendHelloClick = async () => {
     try {
-      await sendHello();
+      await sendMessage();
     } catch (error) {
       console.error(error);
       dispatch({ type: MetamaskActions.SetError, payload: error });
